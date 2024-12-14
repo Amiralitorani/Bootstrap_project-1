@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../Assest/css/bootstrap.css" />
+    <link rel="stylesheet" href="../Assest/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body style="background-color: lightgrey" dir="rtl">
+    <header class="conatiner">
+      <div class="row bg-white">
+        <div class="col-12 mt-4">
+          <div class="d-flex justify-content-around mx-5">
+            <div class="align-items-center d-flex justify-content-center">
+              <button
+                class="navbar-toggler"
+                type="button"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                onclick="toggleMenu()"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <img
+              class="mx-2"
+              style="width: 110px"
+              src="../Assest/img/nav.svg"
+              alt=""
+            />
+            <input
+              class="form-control py-2 ms-3"
+              type="text"
+              placeholder="نام.برند یا دسته بندی مورد نظر..."
+            />
+            <button class="btn btn-light mx-auto py-0 w-25 border">
+              ورود/ ثبت نام
+            </button>
+          </div>
+          <br />
+
+          <div id="navbarMenu" class="collapse navbar-collapse">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link text-black text-muted" href="index.html"
+                  >صفحه نخست</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black text-muted" href="#">محصولات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black text-muted" href="#"
+                  >محصولات سگ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black text-muted" href="#"
+                  >محصولات پرندگان</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black text-muted" href="#"
+                  >محصولات جوندگان</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black text-muted" href="#"
+                  >محصولات آبزیان</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black text-muted" href="#">سبک زندگی</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black text-muted" href="#"
+                  >تماس با ما</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="row">
+        <div class="col-12">
+          <div
+            id="slider"
+            class="carousel slide carousel-fade my-1"
+            data-bs-ride="carousel"
+            data-bs-interval="5000"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#slider"
+                data-bs-slide-to="0"
+                class="active"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#slider"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#slider"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../Assest/img/3slide.webp"
+                  class="d-block w-100 rounded-4"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../Assest/img/2 slide.webp"
+                  class="d-block w-100 rounded-4"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../Assest/img/1 slide.webp"
+                  class="d-block w-100 rounded-4"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div
+            class="rounded-4 p-5 bg-white my-4"
+            style="
+              box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+                rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            "
+          >
+            <h2 class="h5 border-bottom border-4 border-primary pb-2 mb-4">
+              پر فروش ترین کالاها
+            </h2>
+            <div class="row g-2">
+              <div
+                class="col-12 col-md-6 col-lg-3 mb-2"
+                style="box-shadow: rgba(0, 0, 0, 0.16) 4px 7px 11px 2px"
+              >
+                <div class="card border-0">
+                  <div
+                    class="card-header d-flex justify-content-center bg-white border-0"
+                  >
+                    <img
+                      style="width: 150px"
+                      src="../Assest/img/khamir.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body text-center mb-5 border-0 text-muted">
+                    <p>خمیر بازی</p>
+                    <span class="text-decoration-line-through"
+                      >370,000 تومان</span
+                    >
+                    <br />
+                    <span class="text-primary">219.000 تومان</span>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-center bg-white border-0"
+                  >
+                    <button class="btn btn-primary w-100">
+                      افزودن به سبد خرید
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6 col-lg-3 mb-2"
+                style="box-shadow: rgba(0, 0, 0, 0.16) 4px 7px 11px 2px"
+              >
+                <div class="card border-0">
+                  <div
+                    class="card-header d-flex justify-content-center bg-white border-0"
+                  >
+                    <img
+                      style="width: 150px"
+                      src="../Assest/img/khamir.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body text-center mb-5 border-0 text-muted">
+                    <p>خمیر بازی</p>
+                    <span class="text-decoration-line-through"
+                      >370,000 تومان</span
+                    >
+                    <br />
+                    <span class="text-primary">219.000 تومان</span>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-center bg-white border-0"
+                  >
+                    <button class="btn btn-primary w-100">
+                      افزودن به سبد خرید
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6 col-lg-3 mb-2"
+                style="box-shadow: rgba(0, 0, 0, 0.16) 4px 7px 11px 2px"
+              >
+                <div class="card border-0">
+                  <div
+                    class="card-header d-flex justify-content-center bg-white border-0"
+                  >
+                    <img
+                      style="width: 150px"
+                      src="../Assest/img/khamir.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body text-center border-0 mb-5 text-muted">
+                    <p>خمیر بازی</p>
+                    <span class="text-decoration-line-through"
+                      >370,000 تومان</span
+                    >
+                    <br />
+                    <span class="text-primary">219.000 تومان</span>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-center bg-white border-0"
+                  >
+                    <button class="btn btn-primary w-100">
+                      افزودن به سبد خرید
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6 col-lg-3 mb-2"
+                style="box-shadow: rgba(0, 0, 0, 0.16) 4px 7px 11px 2px"
+              >
+                <div class="card border-0">
+                  <div
+                    class="card-header d-flex justify-content-center bg-white border-0"
+                  >
+                    <img
+                      style="width: 150px"
+                      src="../Assest/img/khamir.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body text-center border-0 mb-5 text-muted">
+                    <p>خمیر بازی</p>
+                    <span class="text-decoration-line-through"
+                      >370,000 تومان</span
+                    >
+                    <br />
+                    <span class="text-primary">219.000 تومان</span>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-center bg-white border-0"
+                  >
+                    <button class="btn btn-primary w-100">
+                      افزودن به سبد خرید
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <img
+            class="my-2 rounded-5 w-100"
+            src="../Assest/img/mainpic1.webp"
+            alt=""
+          />
+        </div>
+        <div class="col-12 col-md-6">
+          <img
+            class="my-2 rounded-5 w-100"
+            src="../Assest/img/mainpic2.webp"
+            alt=""
+          />
+        </div>
+        <div class="col-12">
+          <div
+            class="rounded-4 p-5 bg-white my-4"
+            style="
+              box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+                rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            "
+          >
+            <h2 class="h5 border-bottom border-4 border-primary pb-2 mb-4">
+              پر فروش ترین کالاها
+            </h2>
+            <div class="row g-2">
+              <div
+                class="col-12 col-md-6 col-lg-3 mb-2"
+                style="box-shadow: rgba(0, 0, 0, 0.16) 4px 7px 11px 2px"
+              >
+                <div class="card border-0">
+                  <div
+                    class="card-header d-flex justify-content-center bg-white border-0"
+                  >
+                    <img
+                      style="width: 150px"
+                      src="../Assest/img/khamir.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body text-center mb-5 border-0 text-muted">
+                    <p>خمیر بازی</p>
+                    <span class="text-decoration-line-through"
+                      >370,000 تومان</span
+                    >
+                    <br />
+                    <span class="text-primary">219.000 تومان</span>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-center bg-white border-0"
+                  >
+                    <button class="btn btn-primary w-100">
+                      افزودن به سبد خرید
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6 col-lg-3 mb-2"
+                style="box-shadow: rgba(0, 0, 0, 0.16) 4px 7px 11px 2px"
+              >
+                <div class="card border-0">
+                  <div
+                    class="card-header d-flex justify-content-center bg-white border-0"
+                  >
+                    <img
+                      style="width: 150px"
+                      src="../Assest/img/khamir.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body text-center mb-5 border-0 text-muted">
+                    <p>خمیر بازی</p>
+                    <span class="text-decoration-line-through"
+                      >370,000 تومان</span
+                    >
+                    <br />
+                    <span class="text-primary">219.000 تومان</span>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-center bg-white border-0"
+                  >
+                    <button class="btn btn-primary w-100">
+                      افزودن به سبد خرید
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6 col-lg-3 mb-2"
+                style="box-shadow: rgba(0, 0, 0, 0.16) 4px 7px 11px 2px"
+              >
+                <div class="card border-0">
+                  <div
+                    class="card-header d-flex justify-content-center bg-white border-0"
+                  >
+                    <img
+                      style="width: 150px"
+                      src="../Assest/img/khamir.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body text-center border-0 mb-5 text-muted">
+                    <p>خمیر بازی</p>
+                    <span class="text-decoration-line-through"
+                      >370,000 تومان</span
+                    >
+                    <br />
+                    <span class="text-primary">219.000 تومان</span>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-center bg-white border-0"
+                  >
+                    <button class="btn btn-primary w-100">
+                      افزودن به سبد خرید
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6 col-lg-3 mb-2"
+                style="box-shadow: rgba(0, 0, 0, 0.16) 4px 7px 11px 2px"
+              >
+                <div class="card border-0">
+                  <div
+                    class="card-header d-flex justify-content-center bg-white border-0"
+                  >
+                    <img
+                      style="width: 150px"
+                      src="../Assest/img/khamir.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body text-center border-0 mb-5 text-muted">
+                    <p>خمیر بازی</p>
+                    <span class="text-decoration-line-through"
+                      >370,000 تومان</span
+                    >
+                    <br />
+                    <span class="text-primary">219.000 تومان</span>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-center bg-white border-0"
+                  >
+                    <button class="btn btn-primary w-100">
+                      افزودن به سبد خرید
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <img
+            class="my-2 rounded-5 w-100"
+            src="../Assest/img/mainpic3.webp"
+            alt=""
+          />
+        </div>
+        <div class="col-12 col-md-6">
+          <img
+            class="my-2 rounded-5 w-100"
+            src="../Assest/img/mainpic4.webp"
+            alt=""
+          />
+        </div>
+        <div class="col-12">
+          <div
+            class="rounded-4 p-5 bg-white my-4"
+            style="
+              box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+                rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            "
+          >
+            <h2 class="h5 border-bottom border-4 border-primary pb-2 mb-4">
+              پر فروش ترین کالاها
+            </h2>
+            <div class="row g-2">
+              <div
+                class="col-12 col-md-6 col-lg-3 mb-2"
+                style="box-shadow: rgba(0, 0, 0, 0.16) 4px 7px 11px 2px"
+              >
+                <div class="card border-0">
+                  <div
+                    class="card-header d-flex justify-content-center bg-white border-0"
+                  >
+                    <img
+                      style="width: 150px"
+                      src="../Assest/img/khamir.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body text-center mb-5 border-0 text-muted">
+                    <p>خمیر بازی</p>
+                    <span class="text-decoration-line-through"
+                      >370,000 تومان</span
+                    >
+                    <br />
+                    <span class="text-primary">219.000 تومان</span>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-center bg-white border-0"
+                  >
+                    <button class="btn btn-primary w-100">
+                      افزودن به سبد خرید
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6 col-lg-3 mb-2"
+                style="box-shadow: rgba(0, 0, 0, 0.16) 4px 7px 11px 2px"
+              >
+                <div class="card border-0">
+                  <div
+                    class="card-header d-flex justify-content-center bg-white border-0"
+                  >
+                    <img
+                      style="width: 150px"
+                      src="../Assest/img/khamir.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body text-center mb-5 border-0 text-muted">
+                    <p>خمیر بازی</p>
+                    <span class="text-decoration-line-through"
+                      >370,000 تومان</span
+                    >
+                    <br />
+                    <span class="text-primary">219.000 تومان</span>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-center bg-white border-0"
+                  >
+                    <button class="btn btn-primary w-100">
+                      افزودن به سبد خرید
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6 col-lg-3 mb-2"
+                style="box-shadow: rgba(0, 0, 0, 0.16) 4px 7px 11px 2px"
+              >
+                <div class="card border-0">
+                  <div
+                    class="card-header d-flex justify-content-center bg-white border-0"
+                  >
+                    <img
+                      style="width: 150px"
+                      src="../Assest/img/khamir.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body text-center border-0 mb-5 text-muted">
+                    <p>خمیر بازی</p>
+                    <span class="text-decoration-line-through"
+                      >370,000 تومان</span
+                    >
+                    <br />
+                    <span class="text-primary">219.000 تومان</span>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-center bg-white border-0"
+                  >
+                    <button class="btn btn-primary w-100">
+                      افزودن به سبد خرید
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-md-6 col-lg-3 mb-2"
+                style="box-shadow: rgba(0, 0, 0, 0.16) 4px 7px 11px 2px"
+              >
+                <div class="card border-0">
+                  <div
+                    class="card-header d-flex justify-content-center bg-white border-0"
+                  >
+                    <img
+                      style="width: 150px"
+                      src="../Assest/img/khamir.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body text-center border-0 mb-5 text-muted">
+                    <p>خمیر بازی</p>
+                    <span class="text-decoration-line-through"
+                      >370,000 تومان</span
+                    >
+                    <br />
+                    <span class="text-primary">219.000 تومان</span>
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-center bg-white border-0"
+                  >
+                    <button class="btn btn-primary w-100">
+                      افزودن به سبد خرید
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="d-flex justify-content-between my-5 flex-wrap">
+            <div class="text-center mb-3">
+              <img
+                class="d-block mb-2 mx-auto"
+                src="../Assest/img/7day.webp"
+                alt="۷ روز ضمانت بازگشت"
+              />
+              <span class="text-muted">۷ روز ضمانت بازگشت</span>
+            </div>
+            <div class="text-center mb-3">
+              <img
+                class="d-block mb-2 mx-auto"
+                src="../Assest/img/ghimat.webp"
+                alt="ضمانت اصالت کالا"
+              />
+              <span class="text-muted">ضمانت اصالت کالا</span>
+            </div>
+            <div class="text-center mb-3">
+              <img
+                class="d-block mb-2 mx-auto"
+                src="../Assest/img/zemanat.webp"
+                alt="ضمانت اصالت کالا"
+              />
+              <span class="text-muted">ضمانت اصالت کالا</span>
+            </div>
+            <div class="text-center mb-3">
+              <img
+                class="d-block mb-2 mx-auto"
+                src="../Assest/img/axpres.webp"
+                alt="تحویل اکسپرس"
+              />
+              <span class="text-muted">تحویل اکسپرس</span>
+            </div>
+            <div class="text-center mb-3">
+              <img
+                class="d-block mb-2 mx-auto"
+                src="../Assest/img/pardakht.webp"
+                alt="پرداخت آنلاین"
+              />
+              <span class="text-muted">پرداخت آنلاین</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="col-12 col-md-3 col-lg-4 p-0">
+          <div class="text-end me-1">
+            <h3 class="h6 pb-1 text-muted">راهنمای خرید از فروشگاه</h3>
+            <ul class="p-0">
+              <li class="list-group-item my-2 text-muted">
+                <a class="text-decoration-none text-black" href="#"
+                  >نحوه ثبت سقارش</a
+                >
+              </li>
+              <li class="list-group-item my-2 text-muted">
+                <a class="text-decoration-none text-black" href="#"
+                  >نحوه ثبت سقارش</a
+                >
+              </li>
+              <li class="list-group-item my-2 text-muted">
+                <a class="text-decoration-none text-black" href="#"
+                  >نحوه ثبت سقارش</a
+                >
+              </li>
+              <li class="list-group-item my-2 text-muted">
+                <a class="text-decoration-none text-black" href="#"
+                  >نحوه ثبت سقارش</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 col-lg-4 p-0">
+          <div class="text-end me-1">
+            <h3 class="h6 text-muted">ارتباط با پت استور</h3>
+            <ul class="p-0">
+              <li class="list-group-item my-2">
+                <a class="text-decoration-none text-black fw-bold" href="#"
+                  ><bdo dir="ltr">02191305154</bdo></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 col-lg-4">
+          <div class="">
+            <p class="text-muted">به دنبال چه محصولی هستید؟</p>
+            <div class="position-relative border">
+              <input
+                class="form-control rounded-start-0"
+                type="text"
+                placeholder="نام کالا مورد نظر شما..."
+              />
+              <button
+                style="left: -70px; bottom: 0"
+                class="btn btn-success position-absolute rounded-start-3 rounded-end-0"
+              >
+                جستجو
+              </button>
+            </div>
+
+            <p class="text-muted my-3">
+              فروشگاه ما را در شبکه‌های اجتماعی دنبال کنید:
+            </p>
+            <div class="d-flex justify-content-between">
+              <a class="fs-2 text-black" href="https://twitter.com/bonyadvokala"
+                ><i class="fa fa-twitter" aria-hidden="true"></i
+              ></a>
+              <a
+                class="fs-2 text-black"
+                href="https://www.instagram.com/bonyadvokala"
+                ><i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+              <a
+                class="fs-2 text-black"
+                href="https://www.facebook.com/bonyadvokala"
+                ><i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a class="fs-2 text-black" href="https://t.me/bonyadvokala"
+                ><i class="fa fa-telegram" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <br />
+    <footer class="container-fluid my-5 bg-white p-5">
+      <div class="row">
+        <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+          <h3 class="text-muted h6">پت شاپ آنلاین پت استور</h3>
+          <p class="text-muted">
+            پت استور به عنوان یکی از قدیمی‌ترین پت شاپ های اینترنتی با بیش از
+            3000 هزار محصول ایرانی و خارجی آماده پاسخگویی به همه ی نیازهای پت
+            شما هست. پت شاپ پت استور، ویترینی از غذای سگ و غذای گربه با برندهای
+            معتبر مانند: رویال کنین، جوسرا و .. همراه با طیف وسیعی از لوازم
+            جانبی برای پت شما است. کالای مورد نیاز پت خود را میتوانید با چند
+            کلیک انتخاب کنید و در سریع ترین زمان ممکن درب منزل تحویل بگیرید.
+            همچنین با مطالعه مطالب و ویدیوهای آموزشی در وبلاگ پت استور میتوانید
+            راههای نگهداری از سگ و گربه خود را آموزش ببینید.
+          </p>
+        </div>
+        <div
+          class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center"
+        >
+          <div class="p-2">
+            <img src="../Assest/img/itehadie.webp" alt="تصویر اتحادیه" />
+          </div>
+          <div class="p-2">
+            <img src="../Assest/img/ietemad.png" alt="تصویر اعتماد" />
+          </div>
+          <div class="p-2">
+            <img src="../Assest/img/itehadie.webp" alt="تصویر اتحادیه" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- =====script===== -->
+    <script src="../Assest/js/bootstrap.bundle.js"></script>
+    <script>
+      function toggleMenu() {
+        var navbarMenu = document.getElementById("navbarMenu");
+        if (navbarMenu.classList.contains("show")) {
+          navbarMenu.classList.remove("show");
+        } else {
+          navbarMenu.classList.add("show");
+        }
+      }
+    </script>
+    <!-- =====script===== -->
+  </body>
+</html>
